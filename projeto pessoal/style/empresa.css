@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*header menus/ logo*/
+.logo{
+    border-style: none;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height:80px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0;
+}
+.menu nav,ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.menu li,a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    list-style: none;
+    color: black;
+    margin-left: 25px;
+    font-size: 20px;
+}
+li a{
+    width: 90px;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+}
+ul a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.search{
+    width: 30px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.menu input{
+    display: inline;
+    width: 270px;
+    height: 30px;
+    padding: 10px 10px;
+    margin-left: 15px;
+    border-radius: 15px;
+    border-style: none;
+    border: 0.5px solid black;
+}
+/*seção submenu*/
+/*menu login*/
+.login ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 140px;
+    background-color: rgb(158, 154, 154);
+    top: 30px;
+    margin-left: 80px;
+    visibility: hidden;
+}
+.login ul a{
+    margin-right: 2.5em;
+    color: #fff;
+}
+.login:hover ul{
+    visibility: visible;
+    top: 60px;
+    transition: all 0.5s;
+    display: inline;
+}
+/*menu produtos*/
+.prod ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 160px;
+    background-color: rgb(158, 154, 154);
+    top: 30px;
+    margin-left: 80px;
+    visibility: hidden;
+}
+.prod ul a{
+    margin-right: 2.5em;
+    color: #fff;
+}
+.prod:hover ul{
+    visibility: visible;
+    top: 60px;
+    transition: all 0.5s;
+    display: inline;
+}
+
+/*seção info 1*/
+.info {
+    padding: 15px 15px;
+    text-align: justify;
+    align-content: center;
+}
+.info h1{
+    padding: 10px 10px;
+    border-bottom: 2px solid rgb(131, 126, 126);
+    width: 450px;
+}
+.info p{
+    padding: 25px;
+    width: 550px;
+}
+
+/*seção info 2*/
+.info2{
+    display: flex;
+    justify-content: center;
+}
+.info2 div{
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+}
+.info2 img{
+    width: 400px;
+    box-shadow: 0 5px 10px 0 black;
+    margin-right: 20px;
+}
+.info2 p{
+    width: 450px;
+    text-align: justify;
+}
+
+
+/*seção info 3*/
+.info3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    height: 55vh;
+    margin-top: 150px;
+    background: rgb(7,7,7);
+}
+.phone{
+    position: relative;
+    bottom: 150px;
+    transform: rotateY(180deg);
+}
+.info3 div{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7em;
+    width: 350px;
+}
+.info3  button{
+    width: 100px;
+    height: 30px;
+    margin-top: 25px;
+    border-style: none;
+    cursor: pointer;
+    background-color: rgb(14, 177, 14);
+}
+.info3 p{
+    text-align: left;
+    color: #fff;
+}
+
+.info3 h1{
+    color: rgb(131, 126, 126);
+    font-size: 35px;
+    width: 450px;
+    padding-bottom: 10px;
+    margin: 15px 15px;
+    border-bottom: 1px solid rgb(131, 126, 126);
+}
+
+
+.copy{
+    padding: 15px 15px;
+    color: rgb(7,7,7);
+}
+.copy p{
+    font-size: 13px;
+}
